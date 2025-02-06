@@ -32,14 +32,18 @@ ul{
 li{
     display: flex;
     align-items: center;
-    gap: 13px;
 }
 
 li:hover{
-    margin-left: 67px;
+
+    a{
+        background-color: rgba(1, 87, 167, 0.249);
+    }
+
     p{
         display: flex;
     }
+
     transition: all 0.3s ease;
 
 }
@@ -47,9 +51,9 @@ li:hover{
 li p{
     display: none;
     color: white;
-    background-color: rgba(255, 255, 255, 0.267);
+    background-color: rgba(1, 87, 167, 0.249);
     padding: 3px;
-    border-radius: 7px;
+    border-radius: 1px 7px 7px 1px;
 }
 
 a{
@@ -57,7 +61,6 @@ a{
     align-items: center;
     justify-content: center;
     background-color: rgba(240, 248, 255, 0.518);
-    /* background-color: rgba(1, 87, 167, 0.249); */
     border-radius: 20px;
     width: 60px;
     height: 60px;
@@ -67,4 +70,20 @@ a{
 i{
     color: white;
     font-size: 30px;
+}
+
+.menu-home:hover{
+    margin-left: 53px;
+}
+
+.menu-musica:hover{
+    margin-left: 75px;
+}
+
+.menu-cantor:hover{
+    margin-left: 83px;
+}
+
+.menu-podcast:hover{
+    margin-left: 74px;
 }

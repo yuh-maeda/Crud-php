@@ -10,13 +10,18 @@
     font-family: 'Poppins';
 }
 
+:root{
+    --fundo: linear-gradient(to bottom, #0087c1, #2384c3, #3780c4, #497cc4, #5878c3, #6574c1, #7170bf, #7c6bbb, #8865b6, #9360af, #9d59a8, #a6539f);
+ 
+}
+
 body{
-    background-color: rgb(0, 135, 193);
+    background: var(--fundo);
     display: flex;
 }
 
 main{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
 }

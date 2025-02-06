@@ -1,0 +1,125 @@
+#home{
+    width: calc(100% - 15px);
+    height: 90%;
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    color: white;
+    margin-top: 30px;
+    margin-left: 80px;
+    font-size: 45px;
+    text-align: left;
+}
+
+.populares{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60%;
+    width: 100%;
+    }
+
+.pop{
+    background-color: #15fbff54;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.347);
+    padding: 0px 8px 0px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pop-txt{
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin: 6px;
+    padding-left: 15px;
+    font-size: 20px;
+} 
+
+.p-musicas{
+    width: 480px;
+    height: 350px;
+}
+
+.pop ::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgba(94, 8, 155, 0.645);
+    border-radius: 0px 20px 20px 0px;
+    border-left: 2px solid rgba(0, 0, 0, 0.471);
+    width: 11px;
+}
+
+.pop ::-webkit-scrollbar-thumb{
+    background-color: rgb(239, 238, 238);
+    height: 10px;
+    border-left: 2px solid rgba(0, 0, 0, 0.779);
+    border-radius: 0px 20px 20px 0px;
+}
+
+
+
+.home-area-tabela{
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.home-tabela{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.h-thead{
+    font-weight: 550;
+    z-index: 1;
+    top: 0;
+    position: sticky;
+}
+
+.h-td{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.h-th, .h-td {
+    text-align: center;
+    width: 100%;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.h-tr{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid rgb(226, 226, 226);
+    background-color: #5878c3;
+    padding: 2px;
+}
+
+.h-tbody tr:hover{
+    background-color: #5878c355;
+    
+}
+
+.p-artistas{
+    width: 270px;
+    height: 350px;
+}
+
+.home-table-autor{
+    border-radius: 20px;
+}
+
+.p-podcast{
+    width: 320px;
+    height: 350px;
+}
