@@ -1,6 +1,6 @@
 #home{
     width: calc(100% - 15px);
-    height: 90%;
+    height: 90vh;
     gap: 60px;
     display: flex;
     flex-direction: column;
@@ -90,7 +90,6 @@ h1{
 }
 
 .h-th, .h-td {
-    text-align: center;
     width: 100%;
     padding: 12px 15px;
     text-align: center;
@@ -103,6 +102,7 @@ h1{
     border-bottom: 2px solid rgb(226, 226, 226);
     background-color: #5878c3;
     padding: 2px;
+    height: 25px;
 }
 
 .h-tbody tr:hover{

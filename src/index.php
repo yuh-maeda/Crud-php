@@ -24,10 +24,10 @@
     <header>
         <nav>
             <ul>
-                <li class='menu-home'><a href="index.php"><i class="fa-solid fa-house"></i></a> <p>Home</p> </li>
-                <li class='menu-musica'><a href="musica.php"><i class="fa-solid fa-music"></i></a> <p>Musicas</p> </li>
-                <li class='menu-cantor'><a href="cantor.php"><i class="fa-solid fa-headphones"></i></a> <p>Cantores</p> </li>
-                <li class='menu-podcast'><a href="podcast.php"><i class="fa-solid fa-microphone"></i></a> <p>Podcast</p> </li>
+                <li class='menu-home'><a href="index.html"><i class="fa-solid fa-house"></i></a> <p>Home</p> </li>
+                <li class='menu-musica'><a href="musica.html"><i class="fa-solid fa-music"></i></a> <p>Musicas</p> </li>
+                <li class='menu-cantor'><a href="cantor.html"><i class="fa-solid fa-headphones"></i></a> <p>Cantores</p> </li>
+                <li class='menu-podcast'><a href="podcast.html"><i class="fa-solid fa-microphone"></i></a> <p>Podcast</p> </li>
             </ul>
         </nav>
     </header>

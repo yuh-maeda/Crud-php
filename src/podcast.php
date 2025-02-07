@@ -1,6 +1,6 @@
 <?php
     require 'connect.php';
-    $sql = 'SELECT * FROM musica';
+    $sql = 'SELECT * FROM podcast';
     $result = mysqli_query($conn,$sql);
 
 ?>
@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Músicas</title>
+    <title>Podcast</title>
 
     <link rel="stylesheet" href="../styles/style.css">
 
@@ -32,8 +32,8 @@
     </header>
     
     <main>
-        <section id='musica'>
-            <h1>Lista de Músicas</h1>
+        <section id='podcast'>
+            <h1>Lista de Podcast</h1>
             <div class="container">
                 <div class="area-tabela">
                         <table class="default-tabela">
@@ -42,29 +42,25 @@
                                     <th class="default-th">Id</th>
                                     <th class="default-th">Nome</th>
                                     <th class="default-th">Autor</th>
-                                    <th class="default-th">Plays</th>
                                     <th class="default-th">Duração</th> 
                                     <th class="default-th"></th> 
                                     <th class="default-th"></th> 
                                 </tr>
                             </thead>
-                            
+
                             <tbody class="default-tbody">
                                 <?php
                                     if ($result){
                                         while($row = mysqli_fetch_assoc($result)){
                                             $id = $row['id'];
                                             $nome = $row['nome'];
-                                            $autor = $row['autor'];
-                                            $plays = $row['plays'];
-                                            $duracao = $row['duracao'];
+                                            $dono = $row['dono'];
 
                                             echo '
                                             <tr>
                                                 <td>'.$id.'</td>
                                                 <td>'.$nome.'</td>
-                                                <td>'.$autor.'</td>
-                                                <td>'.$plays.'</td>
+                                                <td>'.$dono.'</td>
                                                 <td>'.$duracao.'</td>
                                                 <td class="default-td"><a href="editar_musica.php?id='.$id.'" class="default-button editar">editar</a></td>  
                                                 <td class="default-td"><a href="excluir_musica.php?id='.$id.'" class="default-button excluir">excluir</a></td> 
