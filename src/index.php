@@ -3,7 +3,7 @@
     $sql = 'SELECT * FROM musica ORDER BY plays DESC LIMIT 10';
     $result_msc = mysqli_query($conn,$sql);
 
-    $sql = 'SELECT * FROM cantor LIMIT 9';
+    $sql = 'SELECT * FROM cantor';
     $result_autor = mysqli_query($conn,$sql);
 
     $sql = 'SELECT * FROM podcast LIMIT 10';
@@ -39,16 +39,16 @@
                 <div class="p-musicas pop">
                     <h2 class="pop-txt" >As 10 musicas Populares</h2>
 
-                    <div class="home-area-tabela">
-                        <table class="home-table-msc home-tabela">
-                            <thead class='h-thead'>
-                                <tr class='h-tr'>
-                                        <th>Nome</th>
-                                        <th>Autor</th>
-                                        <th>Duração</th>
+                    <div class="area-tabela">
+                        <table class="default-tabela">
+                            <thead class='default-thead'>
+                                <tr class='default-tr'>
+                                        <th class='default-th'>Nome</th>
+                                        <th class='default-th'>Autor</th>
+                                        <th class='default-th'>Duração</th>
                                 </tr>
                             </thead>
-                            <tbody class='h-tbody'>
+                            <tbody class='default-tbody'>
 
                                 <?php
                                     if ($result_msc){
@@ -58,10 +58,10 @@
                                             $duracao = $row['duracao'];
 
                                             echo '
-                                            <tr class="h-tr">
-                                                <td class="h-td">'.$nome.'</td>
-                                                <td class="h-td">'.$autor.'</td>
-                                                <td class="h-td">'.$duracao.'</td>
+                                            <tr class="default-tr">
+                                                <td class="default-td">'.$nome.'</td>
+                                                <td class="default-td">'.$autor.'</td>
+                                                <td class="default-td">'.$duracao.'</td>
                                             </tr>
                                         ';
                                         }
@@ -74,15 +74,14 @@
 
                 <div class="p-artistas pop">
                     <h2 class="pop-txt" >Artistas do momento</h2>
-                    <div class="home-area-tabela">
-                        <table class="home-table-autor home-tabela">
-                            <thead class='h-thead'>
-                                <tr class='h-tr'>
-                                        <th>Id</th>
-                                        <th>Autor</th>
+                    <div class="area-tabela">
+                        <table class="default-tabela">
+                            <thead class='default-thead'>
+                                <tr class='default-tr'>
+                                        <th class='default-th'>Autor</th>
                                 </tr>
                             </thead>
-                            <tbody class='h-tbody'>
+                            <tbody class='default-tbody'>
                                 <?php
                                     if ($result_autor){
                                         while($row = mysqli_fetch_assoc($result_autor)){
@@ -90,9 +89,8 @@
                                             $nome = $row['nome'];
 
                                             echo '
-                                                <tr class="h-tr">
-                                                    <td class="h-td">'.$id.'</td>
-                                                    <td class="h-td">'.$nome.'</td>
+                                                <tr class="default-tr">
+                                                    <td class="default-td">'.$nome.'</td>
                                                 </tr>
                                             ';
                                         }
@@ -105,22 +103,22 @@
 
                 <div class="p-podcast pop">
                     <h2 class="pop-txt" >Principais Podcast</h2>
-                    <div class="home-area-tabela">
-                        <table class="home-table-autor home-tabela">
-                            <thead class='h-thead'>
-                                <tr class='h-tr'>
-                                        <th class='h-th'>Nome</th>
+                    <div class="area-tabela">
+                        <table class="default-tabela">
+                            <thead class='default-thead'>
+                                <tr class='default-tr'>
+                                        <th class='default-th'>Nome</th>
                                 </tr>
                             </thead>
-                            <tbody class='h-tbody'>
+                            <tbody class='default-tbody'>
                                 <?php
                                     if ($result_podcast){
                                         while($row = mysqli_fetch_assoc($result_podcast)){
                                             $nome = $row['nome'];
 
                                             echo '
-                                                <tr class="h-tr">
-                                                    <td class="h-td">'.$nome.'</td>
+                                                <tr class="default-tr">
+                                                    <td class="default-td">'.$nome.'</td>
                                                 </tr>
                                             ';
                                         }

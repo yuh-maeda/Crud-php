@@ -1,8 +1,8 @@
 <?php
 
-$hostname = '192.168.100.235';
-$username = "user";
-$password = '321';
+$hostname = '127.0.0.1';
+$username = "root";
+$password = '';
 $db = 'crud_music';
 
 $conn = new mysqli($hostname,$username,$password,$db);

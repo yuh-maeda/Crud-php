@@ -59,8 +59,8 @@
                                                 <td class="default-td">'.$id.'</td>
                                                 <td class="default-td">'.$nome.'</td>
                                                 <td class="default-td">'.$genero.'</td>
-                                                <td class="default-td"><a href="editar_musica.php?id='.$id.'" class="default-button editar">editar</a></td>  
-                                                <td class="default-td"><a href="excluir_musica.php?id='.$id.'" class="default-button excluir">excluir</a></td> 
+                                                <td class="default-td"><a href="editar_musica.php?id='.$id.'" class="default-button btn1">editar</a></td>  
+                                                <td class="default-td"><a href="excluir_musica.php?id='.$id.'" class="default-button btn2">excluir</a></td> 
                                             </tr>
                                         ';
                                         }
