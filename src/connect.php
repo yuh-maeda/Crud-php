@@ -1,6 +1,6 @@
 <?php
 
-$hostname = '10.38.0.81';
+$hostname = '192.168.100.235';
 $username = "user";
 $password = '321';
 $db = 'crud_music';

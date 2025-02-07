@@ -23,10 +23,10 @@
     <header>
         <nav>
             <ul>
-                <li class='menu-home'><a href="index.html"><i class="fa-solid fa-house"></i></a> <p>Home</p> </li>
-                <li class='menu-musica'><a href="musica.html"><i class="fa-solid fa-music"></i></a> <p>Musicas</p> </li>
-                <li class='menu-cantor'><a href="cantor.html"><i class="fa-solid fa-headphones"></i></a> <p>Cantores</p> </li>
-                <li class='menu-podcast'><a href="podcast.html"><i class="fa-solid fa-microphone"></i></a> <p>Podcast</p> </li>
+                <li class='menu-home'><a href="index.php"><i class="fa-solid fa-house"></i></a> <p>Home</p> </li>
+                <li class='menu-musica'><a href="musica.php"><i class="fa-solid fa-music"></i></a> <p>Musicas</p> </li>
+                <li class='menu-cantor'><a href="cantor.php"><i class="fa-solid fa-headphones"></i></a> <p>Cantores</p> </li>
+                <li class='menu-podcast'><a href="podcast.php"><i class="fa-solid fa-microphone"></i></a> <p>Podcast</p> </li>
             </ul>
         </nav>
     </header>
@@ -58,10 +58,10 @@
 
                                             echo '
                                             <tr>
-                                                <td>'.$id.'</td>
-                                                <td>'.$nome.'</td>
-                                                <td>'.$dono.'</td>
-                                                <td>'.$duracao.'</td>
+                                                <td class="default-td">'.$id.'</td>
+                                                <td class="default-td">'.$nome.'</td>
+                                                <td class="default-td">'.$dono.'</td>
+                                                <td class="default-td">'.$duracao.'</td>
                                                 <td class="default-td"><a href="editar_musica.php?id='.$id.'" class="default-button editar">editar</a></td>  
                                                 <td class="default-td"><a href="excluir_musica.php?id='.$id.'" class="default-button excluir">excluir</a></td> 
                                             </tr>
